@@ -1,5 +1,7 @@
 {
   "name": "Violet_xR",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
