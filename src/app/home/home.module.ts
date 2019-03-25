@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { CameraPreview } from '@ionic-native/camera-preview/ngx';
+
 
 @NgModule({
   imports: [
@@ -17,6 +19,9 @@ import { HomePage } from './home.page';
         component: HomePage
       }
     ])
+  ],
+  providers: [
+    CameraPreview
   ],
   declarations: [HomePage],
   schemas: [
