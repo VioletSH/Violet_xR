@@ -39,7 +39,9 @@
                 "input": "src/global.scss"
               }
             ],
-            "scripts": [],
+            "scripts": [   
+              "node_modules/ar.js/aframe/build/aframe-ar.js"            
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -100,7 +102,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [],
-            "scripts": [],
+            "scripts": [ "node_modules/ar.js/aframe/build/aframe-ar.js"],
             "assets": [
               {
                 "glob": "favicon.ico",

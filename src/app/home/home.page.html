@@ -1,14 +1,5 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content>
-  <a-scene>
-    <a-cylinder color="yellow" theta-start="50" theta-length="280" side="double" height="0.2" width="0.1"></a-cylinder>
-    <a-sky color="#ECECEC"></a-sky>
+  <a-scene embedded arjs>
+    <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+    <a-marker-camera preset='hiro'></a-marker-camera>
   </a-scene>
-</ion-content>
