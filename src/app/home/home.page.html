@@ -7,22 +7,8 @@
 </ion-header>
 
 <ion-content>
-  <a-scene embedded arjs='debugUIEnabled: false;' vr-mode-ui="enabled: false">
-
-    <a-assets>
-        <a-asset-item id="ghost-model" src="https://ionic-dc.github.io/demos/ar-assets/models/ghost/scene.gltf"></a-asset-item>
-        <a-asset-item id="cat-model" src="https://ionic-dc.github.io/demos/ar-assets/models/cat/scene.gltf"></a-asset-item>
-    </a-assets>
-
-    <a-marker type="pattern" url="https://ionic-dc.github.io/demos/ar-assets/marker-patterns/ionic-logo-marker.patt">
-        <a-gltf-model src="#ghost-model" id="ghost" position="0 1 0" scale=".005 .005 .005" rotation="0 0 0"></a-gltf-model>
-    </a-marker>
-
-    <a-marker type="pattern" url="https://ionic-dc.github.io/demos/ar-assets/marker-patterns/github-marker.patt">
-        <a-gltf-model src="#cat-model" id="cat" scale=".075 .075 .075" rotation="0 0 0"></a-gltf-model>
-    </a-marker>
-
-    <a-camera-static/>
-
-</a-scene>
+  <a-scene>
+    <a-cylinder color="yellow" theta-start="50" theta-length="280" side="double" height="0.2" width="0.1"></a-cylinder>
+    <a-sky color="#ECECEC"></a-sky>
+  </a-scene>
 </ion-content>
