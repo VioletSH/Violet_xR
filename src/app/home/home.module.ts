@@ -3,10 +3,9 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import {CameraPreview} from '@ionic-native/camera-preview/ngx';
 
 import { HomePage } from './home.page';
-import { CameraPreview } from '@ionic-native/camera-preview/ngx';
-
 
 @NgModule({
   imports: [
@@ -20,13 +19,13 @@ import { CameraPreview } from '@ionic-native/camera-preview/ngx';
       }
     ])
   ],
-  providers: [
-    CameraPreview
-  ],
   declarations: [HomePage],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
     NO_ERRORS_SCHEMA
+  ],
+  providers:[
+    CameraPreview
   ]
 })
 export class HomePageModule {}

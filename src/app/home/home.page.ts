@@ -1,5 +1,5 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { CameraPreview, CameraPreviewOptions, CameraPreviewDimensions } from '@ionic-native/camera-preview/ngx';
+import {CameraPreview, CameraPreviewOptions} from '@ionic-native/camera-preview/ngx';
 
 
 @Component({
@@ -8,10 +8,10 @@ import { CameraPreview, CameraPreviewOptions, CameraPreviewDimensions } from '@i
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  constructor( private cameraPreview: CameraPreview){
+  constructor(private cameraPreview: CameraPreview){
     this.cameraPreview.switchCamera();
 
-    let cameraPreviewOpts: CameraPreviewOptions = {
+    const cameraPreviewOpts: CameraPreviewOptions = {
       x: 0,
       y: 0,
       width: window.screen.width,
@@ -21,9 +21,7 @@ export class HomePage {
       previewDrag: true,
       toBack: true,
       alpha: 1
-    }
-  
-  
+    };
     this.cameraPreview.startCamera(cameraPreviewOpts).then(
       (res) => {
       console.log(res)

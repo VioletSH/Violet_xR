@@ -8,7 +8,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { CameraPreview } from '@ionic-native/camera-preview/ngx';
+import {CameraPreview} from '@ionic-native/camera-preview/ngx';
 
 @NgModule({
   declarations: [AppComponent],
